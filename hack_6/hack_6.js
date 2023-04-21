@@ -1,3 +1,4 @@
+const axios = require("axios");
 /*
 - Mediante la libreria: axios
 - Hacer una petición de tipo: GET
@@ -14,7 +15,7 @@
 
 
 async function fnTest() {
-  //...
+  
   return 
 }
 
