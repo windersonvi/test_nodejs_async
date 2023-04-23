@@ -15,8 +15,8 @@ const axios = require("axios");
 
 
 async function fnTest() {
-  
-  return 
+  let url = 'https://jsonplaceholder.typicode.com/posts';
+  return await axios.get(url).then( busqueda => busqueda.data.find(valor => valor.id === 2));
 }
 
 module.exports = fnTest;

@@ -1,3 +1,5 @@
+const fetch = require('cross-fetch');
+
 /*
 - Mediante la libreria: fetch
 - Hacer una petición de tipo: PUT
@@ -11,7 +13,8 @@
 */
 
 async function fnTest(id) {
-  return
+  let url = `https://jsonplaceholder.typicode.com/posts/${id}`
+  return await fetch(url, {method: "put"})
 }
 
 module.exports = fnTest;
